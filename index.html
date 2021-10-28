@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+ <div class="container">
+   <div id="game-title">
+     <h4>Welcome To <a href="https://www.citonhub.com/profile#/profile/activities/YungScript">Yung<span class="script">Script</span></a> Typing Game</h4>
+   </div>
+  <div id="current-level-time-div">Type the EXACT WORD BELOW in <span id="seconds">4</span> second(s)</div> 
+  <header id="header">
+   <select id="select-level">
+    <option>SELECT LEVEL</option> 
+    <option id="easy">EASY</option>
+    <option id="medium">MEDIUM</option>
+    <option id="hard">HARD</option>
+    <option id="prof">PROFESSIONAL</option>
+    <option id="legend">LEGEND</option>
+   </select>
+   <div id="pre-message">**Please Select Level</div>
+  </header>
+
+  <div id="section">
+    <div class="current-word" id="current-word"></div>
+    <input type="text" id="input-word" placeholder="Start Typing...">
+    <div id="message"></div>
+    <div class="time-and-score">
+      <div>Time Left: <span id="time">0</span></div>
+      <div>Score: <span id="score">0</span></div>
+    </div>
+  </div>
+
+  <button id="start-game">START GAME</button>
+
+
+  <!-- Absolute Positioning -->
+  <div id="level-status"> Current Level: <span id="current-level"></span></div>
+  <div class="credit">
+    credit <a href="https://www.citonhub.com/view-profile#/profile/channels/docraymond" target="_blank">@olutolaOwolabi</a><br>
+    copyright &copy; <a href="https://www.citonhub.com" target="_blank">@CitonHub</a>
+  </div>
+
+  <button id="home">HOME</button>
+
+  <div id="user-guide">
+   <button id="about-game">ABOUT</button>
+   <button id="help-me">HELP</button>
+   <button id="exit-game">EXIT</button>
+  </div>
+
+  <div class="animate" id="about-and-help">
+    <div id="about-gameStruction">
+     <h3>ABOUT GAME</h3>
+     <div class="cancel">&times;</div>
+      <ul>
+        <li> This game is designed to help user grow their typing skills and enjoy themselves while typing </li>
+        <li> The Exit button is disabled so the user won't close the CURRENT TAB </li>
+        <li> No "Copyright &copy;" needed, just added it to make PAGE ATTRACTIVE </li>
+      </ul>
+    </div>
+    <div id="help-gameStruction">
+     <h3>HELP ME?</h3>
+     <div class="cancel">&times;</div>
+        <ul>
+          <li>Select a level and Click Start Game</li>
+          <li>Type the exact word correctly in the input field</li>
+          <li>Characters are CASE SENSITIVE</li>
+          <li>If GAME IS OVER, Type the current word to start again</li>
+        </ul>
+    </div>
+  </div>
+ </div>
+
+  
+  
+  
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
